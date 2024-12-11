@@ -1,0 +1,66 @@
+.DiscountContainer {
+    display: flex; /* Режим Flexbox для горизонтального выравнивания */
+    justify-content: space-between; /* Распределяем карточки по ширине */
+    gap: 20px; /* Отступ между карточками */
+    flex-wrap: wrap; /* Если не помещаются, переносим на следующую строку */
+    padding: 20px; /* Общий отступ вокруг контейнера */
+  }
+  
+  .DiscountBlock {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Ограничиваем ширину карточки */
+    width: 100%;
+
+    position: relative;
+  }
+  
+  .productName {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .priceBlock {
+    display: flex;
+    gap: 20px;
+  
+    margin-bottom: 20px; /* Отступ между ценами и кнопкой */
+  }
+  
+  .discountPrice {
+    color: #e67e22; /* Оранжевый цвет для скидочной цены */
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .originalPrice {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .moreInfoButton {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .moreInfoButton:hover {
+    background-color: #2980b9;
+  }
+  
+  .productImage {
+    width: 100px; /* Уменьшаем размер картинки */
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    object-fit: contain;
+  }
+  

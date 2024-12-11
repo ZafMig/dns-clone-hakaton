@@ -3,7 +3,7 @@
     margin: 20px;
     padding: 0;
     padding-left: 100px;
-    position: relative; /* Добавлено для того, чтобы LoginMenu позиционировался относительно родителя */
+     
 }
 
 .Catalog {
@@ -38,11 +38,11 @@
 .Input {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 50%;
 }
 
 input {
-    width: 100%;
+    width: 90%;
     max-width: 780px; 
     height: 80px;
     border-radius: 7px;
@@ -129,6 +129,40 @@ p:hover {
 
 .LoginMenu button:hover {
     background-color: darkorange;
+}
+
+.ModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Поместить поверх контента */
+}
+
+.Modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.CloseButton {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: transparent;
+  color: orange;
+  border: 1px solid orange;
+  cursor: pointer;
+}
+
+.CloseButton:hover {
+  background-color: darkorange;
 }
 
 @media (max-width: 768px) {

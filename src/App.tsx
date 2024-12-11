@@ -7,6 +7,9 @@ import { MoreProduct } from './Components/MoreProduct/MoreProduct'
 import { Company } from './Components/Company/Company'
 import { News } from './Components/News/News'
 import { Footer } from './Components/Footer/Footer'
+import { Discount } from './Discount/Discount'
+
+
 
 function App() {
   return (
@@ -16,6 +19,7 @@ function App() {
     <Home/>
     <MoreProduct/>
     <Company/>
+    <Discount/>
     <News/>
     <Footer/>
    </StrictMode>

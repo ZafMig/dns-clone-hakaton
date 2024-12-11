@@ -41,7 +41,7 @@ export const MoreProduct = () => {
                     <div className={styles.Product}></div>
                     <div className={styles.Categories}>
                         <ul>
-                            <li>СХолодильники автомобильные</li>
+                            <li>Холодильники автомобильные</li>
                             <li>Ноутбуки</li>
                             <li>Электрогитары</li>
                             <li>Телевизоры</li>

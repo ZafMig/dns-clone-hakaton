@@ -8,8 +8,11 @@
 
 .CompanyImg {
     background: url('https://c.dns-shop.ru/thumb/st1/fit/105/35/856ff976e32221f090e9aa7ac9e5ca7a/69e02179171d693c6982c3cddf1dd5d03b35e60c46ea8173923960042d9defe6.png');
-    width: 106px;
+    width: 108px;
     height: 65px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
    
    cursor: pointer;
     border-radius: 10px; /* Закруглим углы для улучшенного внешнего вида */

@@ -1,8 +1,7 @@
 .News {
     display: flex;
     flex-direction: column;
-    padding-left: 1000px;
-    padding: 20px;
+    padding-left: 100px;
 }
 
 .Buttons {
@@ -43,12 +42,19 @@ button:active {
     background-size: cover;
     background-position: center;
     border-radius: 10px; /* Закругленные углы */
+    cursor: pointer;
   
 }
 
 /* Стили для .Job */
 .Job {
     background-image: url('https://o.dns-shop.ru/original/st1/2400e1d0a7f9fa2a27088d6ad0612bf7/8f5025a168c639bab127a8acdc365d4141dd6947042b2301bc1a5dc8cd10f7d2.png');
+}
+
+.Produ{
+    background: url('https://c.dns-shop.ru/thumb/st1/fit/300/300/80a5d025260114198593d0ab54732d43/e72e4e5aecc47920bc411e28a6e44edf39b584f8c1ed4c19ec857d219d7d7282.jpg.webp');
+    width: 300px;
+    height: 200px;
 }
 
 

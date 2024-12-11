@@ -17,6 +17,8 @@ export const Company = () => {
             <div className={styles.CompanyImg} onClick={handleClick}></div>
             <div className={styles.CompanyImg} onClick={handleClick}></div>
             <div className={styles.CompanyImg} onClick={handleClick}></div>
+            <div className={styles.CompanyImg} onClick={handleClick}></div>
+            <div className={styles.CompanyImg} onClick={handleClick}></div>
            
         </div>
     );
