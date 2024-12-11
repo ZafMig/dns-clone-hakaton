@@ -3,23 +3,24 @@
     margin: 20px;
     padding: 0;
     padding-left: 100px;
+    position: relative; /* Добавлено для того, чтобы LoginMenu позиционировался относительно родителя */
 }
 
 .Catalog {
     background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmYl3DceomAttz3VujbUyXZg1HquY8xaH1kA&s');
-    width: 40%; 
+     width: 20%;
     height: 70px;
     border-radius: 15px;
     display: flex;
     align-items: center;
-    padding: 0 15px; 
+    padding: 0 15px;
     box-sizing: border-box;
 }
 
 .h1Search {
     font-size: 40px;
     color: white;
-    margin-right: auto; 
+    margin-right: auto;
 }
 
 .Name {
@@ -37,8 +38,7 @@
 .Input {
     display: flex;
     justify-content: center;
- 
-    width: 100%;
+    width: 60%;
 }
 
 input {
@@ -47,7 +47,6 @@ input {
     height: 80px;
     border-radius: 7px;
     border: 1px solid #ccc;
-    padding-left: 15px;
     background-color: #f7f7f7;
     font-size: 16px;
 }
@@ -55,7 +54,6 @@ input {
 button {
     padding: 12px 20px;
     background-color: orange;
-   
     font-size: 16px;
     border: none;
     border-radius: 5px;
@@ -87,6 +85,51 @@ p:hover {
     color: orange;
 }
 
+
+.Login {
+    position: relative; 
+}
+
+.LoginText {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.LoginMenu {
+    display: none; 
+    position: absolute; 
+    left: -150px; 
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 405px; /* Ширина меню */
+    padding: 20px;
+    z-index: 10;
+}
+
+.Login:hover .LoginMenu {
+    display: block; /* Показываем меню при наведении на элемент "Войти" */
+}
+
+.LoginMenu form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.LoginMenu button {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.LoginMenu button:hover {
+    background-color: darkorange;
+}
 
 @media (max-width: 768px) {
     .Search {

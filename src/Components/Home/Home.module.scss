@@ -1,8 +1,8 @@
 .Home {
     display: flex;
-    flex-wrap: wrap;
+   
     padding: 20px;
-    justify-content: space-between;
+    gap: 20px;
     padding-left: 100px;
 }
 
@@ -54,8 +54,6 @@ button:active {
 .blocks {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 10px;
     gap: 20px;
 }
 
@@ -63,7 +61,6 @@ button:active {
     width: 240px;
     height: 200px;
     background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCK6UHwXpoTVxYARjbx2-IrtEKCsc06cLEsA&s');
-    background-size: cover;
     background-position: center;
     border-radius: 15px;
     display: flex;
@@ -71,7 +68,7 @@ button:active {
     justify-content: flex-end;
     padding: 10px;
     color: white;
-    box-sizing: border-box;
+  
 }
 
 .block h1 {
