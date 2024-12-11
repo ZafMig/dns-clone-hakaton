@@ -1,0 +1,117 @@
+.Home {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+
+.Cab {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ6nxApzhhLBm3GP1U4j54ijTGVzv7qcZwJw&s');
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 206px;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+}
+
+.Cab h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.Cab p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: orange;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #e0e0e0;
+}
+
+.buttons {
+    display: flex; /* Выравниваем кнопки горизонтально */
+    justify-content: flex-start; /* Кнопки выравниваются по левому краю */
+    gap: 10px; /* Расстояние между кнопками */
+    margin-top: 10px; /* Добавляем небольшой отступ сверху */
+}
+
+.blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 10px;
+    gap: 20px;
+}
+
+.block {
+    width: 240px;
+    height: 200px;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCK6UHwXpoTVxYARjbx2-IrtEKCsc06cLEsA&s');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.block h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.block p {
+    font-size: 14px;
+}
+
+.block:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .Home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Cab {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        flex-direction: column; /* Если экран маленький, кнопки будут располагаться вертикально */
+        align-items: center;
+    }
+}

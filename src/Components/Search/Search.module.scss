@@ -1,0 +1,131 @@
+.Search {
+    display: flex;
+    margin: 20px;
+    padding: 0;
+    padding-left: 100px;
+}
+
+.Catalog {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmYl3DceomAttz3VujbUyXZg1HquY8xaH1kA&s');
+    width: 40%; 
+    height: 70px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px; 
+    box-sizing: border-box;
+}
+
+.h1Search {
+    font-size: 40px;
+    color: white;
+    margin-right: auto; 
+}
+
+.Name {
+    display: flex;
+    background-color: orange;
+    border-radius: 15px;
+    width: auto;
+    height: 40px;
+    padding: 0 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.Input {
+    display: flex;
+    justify-content: center;
+ 
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    max-width: 780px; 
+    height: 80px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    background-color: #f7f7f7;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: orange;
+   
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+button:active {
+    background-color: #d77d00;
+}
+
+button + button {
+    margin-top: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+p:hover {
+    color: orange;
+}
+
+
+@media (max-width: 768px) {
+    .Search {
+        padding: 20px;
+        padding-left: 20px; /* Уменьшаем левый отступ для мобильных */
+        flex-direction: column; /* Размещение элементов в столбик */
+    }
+
+    .Catalog {
+        width: 100%; /* Делаем Catalog на всю ширину */
+        margin-right: 0; /* Убираем отступы */
+        margin-bottom: 15px; /* Добавляем отступ снизу */
+    }
+
+    .h1Search {
+        font-size: 28px; /* Уменьшаем размер текста для мобильных */
+    }
+
+    .Name {
+        width: auto; /* Пусть кнопка Name занимает всю ширину на мобильных */
+        font-size: 14px;
+    }
+
+    .Input {
+        width: 100%;
+    }
+
+    input {
+        width: 100%; /* Увеличиваем ширину поля для ввода на мобильных */
+        max-width: 100%;
+        margin-top: 15px; /* Добавляем отступ сверху */
+    }
+
+    button {
+        width: 100%; /* Кнопка теперь будет на всю ширину */
+        margin-top: 10px; /* Меньше отступ между кнопками */
+    }
+
+    p {
+        font-size: 14px; /* Меньше шрифт для мобильных */
+    }
+}

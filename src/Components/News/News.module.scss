@@ -1,0 +1,72 @@
+.News {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1000px;
+    padding: 20px;
+}
+
+.Buttons {
+    display: flex;
+    gap: 20px; /* Расстояние между кнопками */
+    margin-bottom: 20px; /* Расстояние между кнопками и контентом */
+}
+
+button {
+    border: 1px solid #ccc;  
+    padding: 10px 20px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    color: #333;
+}
+
+button:hover {
+    background-color: #f7f7f7;
+    border-color: #aaa;
+}
+
+button:active {
+    background-color: #e0e0e0;
+}
+
+.Content {
+    display: flex;
+    gap: 20px;
+    
+    flex-wrap: wrap;
+}
+
+.Job, .Produ {
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px; /* Закругленные углы */
+  
+}
+
+/* Стили для .Job */
+.Job {
+    background-image: url('https://o.dns-shop.ru/original/st1/2400e1d0a7f9fa2a27088d6ad0612bf7/8f5025a168c639bab127a8acdc365d4141dd6947042b2301bc1a5dc8cd10f7d2.png');
+}
+
+
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .Buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Job, .Produ {
+        width: 100%;
+        height: 200px;
+    }
+}

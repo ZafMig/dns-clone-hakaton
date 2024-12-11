@@ -1,0 +1,106 @@
+.Footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #312f2f;
+    padding: 40px;
+    color: white;
+    width: 100%; /* Обеспечивает, что футер будет занимать всю ширину экрана */
+    box-sizing: border-box; /* Учитывает паддинги и границы в расчет ширины */
+}
+
+.Section {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+/* Стили для блока DNS и Club */
+.DNS {
+    color: orange;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.DNS:hover {
+    color: #ff6600; /* Плавный эффект при наведении */
+}
+
+/* Стили для блока DNS Club */
+.DNSClub {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Club {
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Club:hover {
+    background-color: #333; /* Сменить цвет фона на темный при наведении */
+}
+
+/* Стили для блока DNSTechnologies */
+.DNSTechnologies {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Technologies {
+    background-color: orange;
+    color: white;
+    padding: 5px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Technologies:hover {
+    background-color: #ff6600; /* Цвет для наведения */
+}
+
+/* Стили для списка */
+.List {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.List li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.List li:hover {
+    color: #ff6600; /* Цвет для наведения */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .Footer {
+        padding: 20px;
+    }
+
+    .Section {
+        flex: 1 0 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .DNS, .Club, .Technologies {
+        font-size: 16px;
+    }
+}

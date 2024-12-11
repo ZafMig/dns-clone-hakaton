@@ -1,0 +1,73 @@
+.MoreProduct {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding-left: 100px;
+ }
+ 
+ .One {
+     flex: 1 1 30%; 
+     min-width: 280px; 
+     box-sizing: border-box;
+ }
+ 
+ .Content {
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-between; 
+     gap: 20px;
+     width: 100%;
+ }
+ 
+ .Product {
+     width: 46px; 
+     height: 100px;
+     background: url('https://c.dns-shop.ru/thumb/st1/fit/100/100/87bffa8179a180049a50d2d086043b3e/e135e9e6c4903d49547578f57b15b674024b46ff9d0e74bea64556e46b0e7c42.jpg');
+     background-size: cover;
+     background-position: center;
+     border-radius: 8px;
+ }
+ 
+ .Categories {
+     flex: 1; /* Задаем гибкую ширину */
+     padding-left: 20px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+ 
+ .Categories ul {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+ }
+ 
+ .Categories li {
+     margin-bottom: 10px;
+     font-size: 16px;
+     cursor: pointer;
+     color: #333; /* Цвет текста */
+     transition: color 0.3s ease;
+ }
+ 
+ .Categories li:hover {
+     text-decoration: underline;
+     color: #ff6600; /* Цвет при наведении */
+ }
+ 
+ /* Мобильная адаптивность */
+ @media (max-width: 768px) {
+     .MoreProduct {
+         flex-direction: column; /* Элементы в одну колонку на мобильных устройствах */
+     }
+ 
+     .One {
+         width: 100%; /* Блоки будут занимать 100% ширины */
+     }
+ 
+     .Product {
+         width: 80px; /* Меньше размер на мобильных */
+         height: 80px;
+     }
+ }
+ 
