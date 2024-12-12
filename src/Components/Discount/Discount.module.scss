@@ -1,9 +1,12 @@
 .DiscountContainer {
     display: flex; /* Режим Flexbox для горизонтального выравнивания */
-    justify-content: space-between; /* Распределяем карточки по ширине */
-    gap: 20px; /* Отступ между карточками */
+   justify-content: space-between;
     flex-wrap: wrap; /* Если не помещаются, переносим на следующую строку */
-    padding: 20px; /* Общий отступ вокруг контейнера */
+    padding: 30px; /* Общий отступ вокруг контейнера */
+  }
+
+  .DiscountContainer h1{
+    font-size: 20px;
   }
   
   .DiscountBlock {
@@ -11,13 +14,13 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 400px; /* Ограничиваем ширину карточки */
+    max-width: 250px; /* Ограничиваем ширину карточки */
     width: 20%;
     position: relative;
   }
   
   .productName {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 600;
     margin-bottom: 10px;
   }
