@@ -1,6 +1,10 @@
 import styles from "./Home.module.scss"
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
+
+    const navigate = useNavigate()
+
     const handleCatalog = () => {
         window.location.href = "https://www.dns-shop.ru/catalog/";
     };
@@ -10,8 +14,8 @@ export const Home = () => {
     const handleConfugurator = () => {
         window.location.href = "https://www.dns-shop.ru/configurator/";
     }
-    const handleGiftCard = () => {
-        window.location.href = "https://www.dns-shop.ru/gift-card/";
+    const handleSurvey = () => {
+        navigate('/survey'); // Перенаправление на страницу опроса
     }
     return(
         <div className={styles.Home}>
@@ -36,13 +40,11 @@ export const Home = () => {
                 <h1>Собрать ПК</h1>
                 <p>Без проблем с совместимостью</p>
                 </div>
-                <div className={styles.block} onClick={handleGiftCard}>
-                <h1>Подарочные карты</h1>
-                <p>Дарите любимым</p>
+                <div className={styles.block1} onClick={handleSurvey}>
+                    <h1>Новогодний магазин для ваших близких</h1>
+                    <p>Подарки для ваших близких</p>
                 </div>
-                
             </div>
-
         </div>
     )
 }

@@ -1,0 +1,92 @@
+/* Стиль для контейнера вопроса */
+.QuestionPage {
+  margin: 50px auto; /* Центрируем по горизонтали с отступом сверху */
+  padding: 20px;
+ background: url("../../../../public/survey/Вопрос\ 1.png");
+ padding-left: 100px;
+}
+
+/* Стиль для заголовка */
+.QuestionPage h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Стиль для блока с вариантами ответа */
+.QuestionPage .options {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column; /* Варианты ответа в столбик */
+  gap: 6px; /* Меньшие отступы между вариантами */
+}
+
+/* Стиль для каждого варианта ответа */
+.QuestionPage .options label {
+  display: flex;
+  align-items: center;
+  font-size: 31px; /* Уменьшаем размер шрифта */
+  cursor: pointer; /* Курсор на элементах */
+  padding: 6px 8px; /* Немного уменьшаем отступы внутри */
+  border-radius: 4px; /* Скругленные углы для лучшего внешнего вида */
+  transition: background-color 0.2s ease; /* Плавное изменение фона при наведении */
+  width: 100%; /* Заставляем метки занимать всю ширину */
+}
+
+/* Эффект при наведении на варианты */
+.QuestionPage .options label:hover {
+  background-color: #f5f5f5; /* Легкий серый фон при наведении */
+}
+
+.QuestionPage .options input {
+  margin-right: 8px; /* Меньший отступ между радио кнопкой и текстом */
+  accent-color: #8DD0FF; /* Цвет для радио-кнопки */
+  width: 33px; /* Увеличиваем размер радио кнопки */
+  height: 33px; /* Увеличиваем размер радио кнопки */
+}
+
+/* Стиль для кнопки "Далее" */
+.QuestionPage button {
+  width: auto; /* Убираем ширину 100%, чтобы кнопка не растягивалась */
+  padding: 12px;
+  background-color: #FA891E;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 6px; /* Скругленные углы */
+  transition: background-color 0.3s ease; /* Плавное изменение фона */
+  margin-top: 20px; /* Отступ сверху */
+  text-align: left; /* Выравниваем текст кнопки по левому краю */
+}
+
+/* Эффект при наведении на кнопку */
+.QuestionPage button:hover {
+  background-color: #45a049; /* Немного темнее зеленый при наведении */
+}
+
+/* Стиль для кнопки в состоянии "disabled" */
+.QuestionPage button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed; /* Курсор, когда кнопка отключена */
+}
+
+/* Стиль для адаптивности на мобильных устройствах */
+@media (max-width: 768px) {
+  .QuestionPage {
+    padding: 15px;
+  }
+
+  .QuestionPage h2 {
+    font-size: 20px;
+  }
+
+  .QuestionPage button {
+    font-size: 16px;
+  }
+
+  .QuestionPage .options label {
+    font-size: 14px;
+  }
+}

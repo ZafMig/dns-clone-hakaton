@@ -71,6 +71,34 @@ button:active {
   
 }
 
+.block1 {
+    width: 240px;
+    height: 200px;
+    background-color: #A4FFB4;
+    background-position: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    color: black;
+  
+}
+
+.block1 h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.block1 p {
+    font-size: 14px;
+}
+
+.block1:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 .block h1 {
     font-size: 20px;
     margin-bottom: 10px;

@@ -1,0 +1,34 @@
+.ResultsPage{
+    background: url("../../../../public/survey/готово.png");
+    display: flex;               /* Включаем flexbox */
+    flex-direction: column;      /* Элементы будут располагаться вертикально */
+    justify-content: center;     /* Центрируем элементы по вертикали */
+    align-items: center;         /* Центрируем элементы по горизонтали */
+    height: 100vh;               /* Высота на весь экран */
+    margin: 0;                   /* Убираем отступы */
+   
+}
+
+.ResultsPage h1 {
+    font-size: 60px; /* Пример увеличения размера шрифта */
+   
+  }
+
+.ResultsPage h2{
+    font-size: 40px;
+}
+  
+
+.ResultsPage button {
+    padding: 10px 20px;
+    background-color: #FA891E;
+    border: none;
+    cursor: pointer;
+    font-size: 23px;              /* Устанавливаем размер шрифта */
+    margin-top: 20px;             /* Добавляем отступ сверху (если нужно) */
+    width: 214px;
+    height: 88px;
+    border-radius: 27px;
+    color: white;
+  }
+  
