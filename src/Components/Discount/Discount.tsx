@@ -1,5 +1,5 @@
 import styles from "./Discount.module.scss";
-import productImage from "../../public/d90873c869a4bcbc3d976acaaf833109ed5b5c2fda3e162b4fdd56cb7d923cb3.jpg"; // Путь к изображению товара
+import productImage from "../../../public/d90873c869a4bcbc3d976acaaf833109ed5b5c2fda3e162b4fdd56cb7d923cb3.jpg"; // Путь к изображению товара
 
 export const Discount = () => {
     const originalPrice = 29999;

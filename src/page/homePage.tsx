@@ -4,7 +4,7 @@ import { Home } from '../Components/Home/Home';
 import { GiftShop } from '../Components/GiftShop/GiftShop';
 import { MoreProduct } from '../Components/MoreProduct/MoreProduct';
 import { Company } from '../Components/Company/Company';
-import { Discount } from '../Discount/Discount';
+import { Discount } from '../Components/Discount/Discount';
 import { News } from '../Components/News/News';
 
 export function HomePage() {
