@@ -8,6 +8,8 @@ import { Company } from './Components/Company/Company'
 import { News } from './Components/News/News'
 import { Footer } from './Components/Footer/Footer'
 import { Discount } from './Discount/Discount'
+import { GiftShop } from './Components/GiftShop/GiftShop'
+
 
 
 
@@ -17,6 +19,7 @@ function App() {
     <Header/>
     <Search/>
     <Home/>
+    <GiftShop/>
     <MoreProduct/>
     <Company/>
     <Discount/>

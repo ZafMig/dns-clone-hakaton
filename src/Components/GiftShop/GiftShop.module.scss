@@ -1,0 +1,74 @@
+.Gift {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем заголовок */
+    position: relative; /* Для позиционирования таймера */
+    background: url('../../../public/9849611.png');
+    background-size: 1690px;
+}
+
+.TimerBox {
+    background-color: #FA891E; /* Цвет фона для таймера */
+    padding: 10px; /* Уменьшенные отступы внутри квадрата */
+    border-radius: 10px; /* Закругленные углы */
+    margin-bottom: 20px; /* Отступ между таймером и блоками */
+    height: 20px; /* Уменьшенная высота блока */
+    align-items: center;
+}
+
+.Timer {
+    font-size: 18px; /* Уменьшенный размер шрифта для таймера */
+}
+
+.Blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выровнять блоки по центру */
+    gap: 22px;
+}
+
+.Block {
+    border: 5px solid green; /* Рамка самого нижнего блока */
+    width: 400px; /* Ширина самого нижнего блока */
+    height: 100px; /* Высота блока */
+    margin-bottom: -20px; /* Убираем отступ между блоками */
+    background-color: transparent; /* Делаем фон прозрачным */
+}
+
+.Block2 {
+    border: 5px solid orange; /* Рамка второго уровня */
+    width: 350px; /* Ширина второго уровня */
+    height: 100px; /* Высота блока */
+    margin-bottom: -20px; /* Убираем отступ между блоками */
+    background-color: transparent; /* Делаем фон прозрачным */
+}
+
+.Block3 {
+    border: 5px solid green; /* Рамка третьего уровня */
+    width: 300px; /* Ширина третьего уровня */
+    height: 100px; /* Высота блока */
+    margin-bottom: -20px; /* Убираем отступ между блоками */
+    background-color: transparent; /* Делаем фон прозрачным */
+}
+
+.Block4 {
+    border: 5px solid orange; /* Рамка четвертого уровня */
+    width: 250px; /* Ширина четвертого уровня */
+    height: 100px; /* Высота блока */
+    margin-bottom: -20px; /* Убираем отступ между блоками */
+    background-color: transparent; /* Делаем фон прозрачным */
+}
+
+.Block5 {
+    border: 5px solid green; /* Рамка самого верхнего блока */
+    width: 200px; /* Ширина самого верхнего блока */
+    height: 100px; /* Высота блока */
+    background-color: transparent; /* Делаем фон прозрачным */
+}
+
+.Price {
+    
+    bottom: 10px; /* Отступ от нижней границы блока */
+    left: 10px; /* Отступ от левой границы блока */
+    font-size: 18px; /* Размер шрифта для цены */
+}
