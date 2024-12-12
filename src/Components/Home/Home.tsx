@@ -1,7 +1,21 @@
+import { useState } from "react";
 import styles from "./Home.module.scss"
 import { useNavigate } from "react-router-dom";
+import Registration from "../Reg/Register";
 
 export const Home = () => {
+
+    
+      const [isRegOpen, setIsRegOpen] = useState(false);
+
+      const openReg = (e: React.MouseEvent) => {
+        e.preventDefault(); // Предотвращаем отправку формы
+        setIsRegOpen(true);
+      };
+
+      const closeReg = () => {
+        setIsRegOpen(false); // Закрываем форму регистрации
+      };
 
     const navigate = useNavigate()
 
@@ -22,8 +36,8 @@ export const Home = () => {
             <div className={styles.Cab}>
                 <h1>Личный кабинет</h1>
                 <p>Получайте бонусы, отслеживайте заказы и делитесь мнением</p>
-                <button className={styles.but1}>Войти</button>
-                <button className={styles.but2}>Мои заказы</button>
+                <button className={styles.but1} type="submit" onClick={openReg}>Войти</button>
+                <button className={styles.but2} onClick={openReg}>Мои заказы</button>
             </div>
 
             <div className={styles.blocks}>
@@ -45,6 +59,22 @@ export const Home = () => {
                     <p>Подарки для ваших близких</p>
                 </div>
             </div>
+            {isRegOpen && (
+            <div
+              className={styles.ModalOverlay}
+              onClick={closeReg} // Закрытие модального окна при клике на фон
+            >
+              <div
+                className={styles.Modal}
+                onClick={(e) => e.stopPropagation()} // Остановка всплытия события при клике внутри модального окна
+              >
+                <Registration />
+                <button onClick={closeReg} className={styles.CloseButton}>
+                  Закрыть
+                </button>
+              </div>
+            </div>
+          )}
         </div>
     )
 }

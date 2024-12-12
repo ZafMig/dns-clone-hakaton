@@ -36,8 +36,7 @@ export const Search = () => {
             <form>
               <button
                 type="submit"
-                onClick={openModal} // Открыть модальное окно при нажатии
-              >
+                onClick={openModal}> 
                 Войти
               </button>
             </form>

@@ -1,12 +1,16 @@
 .Registration {
-    width: 80%;
-    max-width: 400px;
+   justify-content: center;
+   align-items: center;
+    max-width: 320px;
     padding: 20px;
-    background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   }
-  
+
+  .Registration button{
+    background-color: #e67e22;
+    color: white;
+  }
+
   .InputField {
     margin-bottom: 15px;
   }
@@ -17,7 +21,7 @@
   }
   
   .InputField input {
-    width: 80%;
+    background-color: white;
     height: 50px;
     padding: 10px;
     border-radius: 5px;

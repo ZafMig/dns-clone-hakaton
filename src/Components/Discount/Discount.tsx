@@ -19,7 +19,17 @@ export const Discount = () => {
                 <img src={productImage} alt="Ноутбук MAIBENBEN" className={styles.productImage} />
             </div>
 
-            {/* Вторая карточка */}
+            <div className={styles.DiscountBlock}>
+                <h1>Еще 16 часов скидка</h1>
+                <p className={styles.productName}>15.6" Ноутбук MAIBENBEN M%$% серебристый</p>
+                <div className={styles.priceBlock}>
+                    <span className={styles.discountPrice}>₽{discountPrice}</span>
+                    <span className={styles.originalPrice}>₽{originalPrice}</span>
+                </div>
+                <button className={styles.moreInfoButton}>Подробнее</button>
+                <img src={productImage} alt="Ноутбук MAIBENBEN" className={styles.productImage} />
+            </div>
+
             <div className={styles.DiscountBlock}>
                 <h1>Еще 16 часов скидка</h1>
                 <p className={styles.productName}>15.6" Ноутбук MAIBENBEN M%$% серебристый</p>
